@@ -15,6 +15,7 @@ node* insertion_front(node* head,int data){
     if(head==NULL){
         head=new_node;
         new_node->next=head;
+        new_node->next=NULL;
     }
     else{
         new_node->next=head->next;

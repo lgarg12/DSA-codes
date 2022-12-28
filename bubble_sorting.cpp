@@ -17,7 +17,7 @@ int* sorting(int* arr,int n){
 }
 int main(){
     int n;
-    cout<<"Enter number of element to be inserted: ";
+    cout<<"Enter number: ";
     cin>>n;
     int arr[n];
     for(int i=0;i<n;i++){
