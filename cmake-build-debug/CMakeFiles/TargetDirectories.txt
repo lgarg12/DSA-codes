@@ -1,3 +1,0 @@
-C:/Users/gargt/Desktop/dummy.repo/DSA-codes/cmake-build-debug/CMakeFiles/DSA_codes.dir
-C:/Users/gargt/Desktop/dummy.repo/DSA-codes/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/gargt/Desktop/dummy.repo/DSA-codes/cmake-build-debug/CMakeFiles/rebuild_cache.dir
