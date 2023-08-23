@@ -7,22 +7,21 @@ string encryption(vector<vector<int>> key,string plainText){
         arr.push_back(a);
     }
     int x = 0;
-    int y = 0;
+    vector<int> Newarr;
     while(x < arr.size()){
+        int a = 0;
         for(int i=0;i<key.size();i++){
-            int a = 0;
-            for(int j=0;j<key[0].size();j++){
-                a+=(key[i][j]*arr[x])%26;
-                x++;
-            }
-            arr[y] = a;
-            y++;
+            a = key[i][0]*arr[x]%26 + key[i][1]*arr[x+1]%26;
+            Newarr.push_back(a);
         }
+        x+=2;
     }
-    for(auto i:arr){
-        cout<<i<<" ";
+    string cipherText = "";
+    for(auto i:Newarr){
+        char a = i + 97;
+        cipherText+=a;
     }
-    return "";
+    return cipherText;
 }
 int main(){
     // Implement 2*2 matrix key
